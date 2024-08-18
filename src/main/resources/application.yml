@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: api-transaction-authorization-persistence
+  datasource:
+    url: jdbc:mysql://localhost:3306/payments?createDatabaseIfNotExist=true
+    username: root
+    password: R00Troot
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  api-docs:
+    path: /v3/api-docs
+
+server:
+  port: 8081

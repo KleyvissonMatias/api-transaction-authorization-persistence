@@ -1,0 +1,48 @@
+openapi: 3.0.1
+info:
+  title: Transaction API
+  version: 1.0.0
+  contact:
+    email: kleyvissonmatias@gmail.com
+servers:
+  - url: http://localhost:8080
+tags:
+  - name: Transactions
+    description: transactions
+paths:
+  /api/v1/transactions:
+    post:
+      tags:
+        - Transactions
+      summary: Creates a new transaction
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                account:
+                  type: string
+                  description: Account number
+                totalAmount:
+                  type: number
+                  format: double
+                  description: Total transaction amount
+                mcc:
+                  type: string
+                  description: MCC (Merchant Category Code)
+                merchant:
+                  type: string
+                  description: Merchant name
+      responses:
+        '200':
+          description: Transaction response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  code:
+                    type: string
+                    description: Transaction status code
