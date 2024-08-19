@@ -26,5 +26,4 @@ public class Mcc {
 
     @Column(name = "dt_updated")
     private LocalDateTime dtUpdated;
-
 }

@@ -41,5 +41,4 @@ public class Account {
 
     @Column(name = "dt_updated")
     private LocalDateTime dtUpdated;
-
 }
