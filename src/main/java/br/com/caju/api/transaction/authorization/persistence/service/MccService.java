@@ -20,8 +20,8 @@ public class MccService {
     public Mcc findMccById(Integer id) {
         return mccRepository.findMccById(id)
                 .orElseThrow(() -> {
-                    LOGGER.log(Level.WARNING, "MCC not found for id: {0}", id);
-                    return new NotFoundException("MCC not found for id: " + id);
+                    LOGGER.log(Level.WARNING, "Mcc not found for id: {0}", id);
+                    return new NotFoundException("Mcc not found for id: " + id);
                 });
     }
 }
