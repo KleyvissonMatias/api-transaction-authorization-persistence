@@ -6,14 +6,22 @@ import br.com.caju.api.transaction.authorization.persistence.repository.MccRepos
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 @RequiredArgsConstructor
 @Service
 public class MccService {
 
     private final MccRepository mccRepository;
 
+    private static final Logger LOGGER = Logger.getLogger(MccService.class.getName());
+
     public Mcc findMccById(Integer id) {
         return mccRepository.findMccById(id)
-                .orElseThrow(() -> new NotFoundException("MCC not found for ID: " + id));
+                .orElseThrow(() -> {
+                    LOGGER.log(Level.WARNING, "MCC not found for id: {0}", id);
+                    return new NotFoundException("MCC not found for id: " + id);
+                });
     }
 }

@@ -16,7 +16,6 @@ import java.time.LocalDateTime;
 public class Mcc {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     @Enumerated(EnumType.STRING)
