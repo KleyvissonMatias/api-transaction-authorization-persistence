@@ -1,6 +1,6 @@
 # Transaction Authorization API 
 
-# api-transaction-authorizathion-persistence
+# api-transaction-authorization-persistence
 
 ## Overview
 
