@@ -38,3 +38,8 @@ The API currently supports authorization for the following MCC categories:
 
    ```bash
    git clone https://github.com/KleyvissonMatias/api-transaction-authorizathion-persistence.git
+
+3. **Notes:**
+
+   * Adjust the database username and password in application.yml for each local environment
+
