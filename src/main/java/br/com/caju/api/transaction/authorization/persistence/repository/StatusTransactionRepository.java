@@ -11,7 +11,6 @@ import java.util.Optional;
 @Repository
 public interface StatusTransactionRepository extends JpaRepository<StatusTransaction, Long> {
 
-    @Query("SELECT s FROM StatusTransaction s WHERE s.id = :id")
     Optional<StatusTransaction> findStatusTransactionById(@Param("id") Integer id);
 
 }

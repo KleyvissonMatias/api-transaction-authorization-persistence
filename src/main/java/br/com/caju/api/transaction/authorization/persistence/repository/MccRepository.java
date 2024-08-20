@@ -11,6 +11,5 @@ import java.util.Optional;
 @Repository
 public interface MccRepository extends JpaRepository<Mcc, Long> {
 
-    @Query("SELECT m FROM Mcc m WHERE m.id = :id")
     Optional<Mcc> findMccById(@Param("id") Integer id);
 }
