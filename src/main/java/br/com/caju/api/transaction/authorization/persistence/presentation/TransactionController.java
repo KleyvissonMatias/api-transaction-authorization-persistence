@@ -25,7 +25,7 @@ public class TransactionController {
 
     private static final Logger LOGGER = Logger.getLogger(TransactionController.class.getName());
 
-    @PostMapping(value = "/authorize")
+    @PostMapping("/authorize")
     public ResponseEntity<TransactionDTOResponse> authorize(@Valid @RequestBody TransactionDTORequest transactionRequest) {
         LOGGER.log(Level.INFO, "Received authorization request: {0}", transactionRequest);
         TransactionDTOResponse response = transactionService.authorize(transactionMapper.toEntity(transactionRequest));
