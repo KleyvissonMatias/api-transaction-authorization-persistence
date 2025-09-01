@@ -19,7 +19,7 @@
     <properties>
         <package>${project.groupId}.transaction</package>
         <java.version>21</java.version>
-        <spring-cloud.version>2023.0.3</spring-cloud.version>
+        <spring-cloud.version>2024.0.1</spring-cloud.version>
         <openapi-generator-maven-plugin.version>7.0.1</openapi-generator-maven-plugin.version>
         <openapi.generator.maven.plugin.inputSpec>
             ${project.basedir}/src/main/resources/swagger/api-transaction-authorization-persistence.yaml

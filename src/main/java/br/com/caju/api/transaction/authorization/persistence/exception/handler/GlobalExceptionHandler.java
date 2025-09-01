@@ -1,7 +1,7 @@
 package br.com.caju.api.transaction.authorization.persistence.exception.handler;
 
 import br.com.caju.api.transaction.authorization.persistence.domain.dto.reponse.TransactionDTOResponse;
-import br.com.caju.api.transaction.authorization.persistence.domain.enuns.StatusCodeTransactionEnum;
+import br.com.caju.api.transaction.authorization.persistence.domain.enums.StatusCodeTransactionEnum;
 import br.com.caju.api.transaction.authorization.persistence.exception.InsufficientBalanceException;
 import br.com.caju.api.transaction.authorization.persistence.exception.NotFoundException;
 import org.springframework.http.ResponseEntity;

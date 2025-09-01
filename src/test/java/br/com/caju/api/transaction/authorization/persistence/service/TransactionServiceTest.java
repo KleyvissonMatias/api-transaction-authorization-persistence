@@ -2,7 +2,8 @@ package br.com.caju.api.transaction.authorization.persistence.service;
 
 import br.com.caju.api.transaction.authorization.persistence.domain.Transaction;
 import br.com.caju.api.transaction.authorization.persistence.domain.dto.reponse.TransactionDTOResponse;
-import br.com.caju.api.transaction.authorization.persistence.domain.enuns.StatusCodeTransactionEnum;
+import br.com.caju.api.transaction.authorization.persistence.domain.enums.StatusCodeTransactionEnum;
+import br.com.caju.api.transaction.authorization.persistence.domain.mapper.TransactionMapper;
 import br.com.caju.api.transaction.authorization.persistence.exception.InsufficientBalanceException;
 import br.com.caju.api.transaction.authorization.persistence.repository.TransactionRepository;
 import org.junit.jupiter.api.Test;
@@ -24,6 +25,9 @@ public class TransactionServiceTest {
 
     @Mock
     private AccountService accountService;
+
+    @Mock
+    private TransactionMapper mapper;
 
     @Mock
     private MccService mccService;

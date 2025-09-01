@@ -1,6 +1,6 @@
 package br.com.caju.api.transaction.authorization.persistence.domain;
 
-import br.com.caju.api.transaction.authorization.persistence.domain.enuns.StatusCodeTransactionEnum;
+import br.com.caju.api.transaction.authorization.persistence.domain.enums.StatusCodeTransactionEnum;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -30,5 +30,3 @@ public class StatusTransaction {
     @Column(name = "dt_updated")
     private LocalDateTime dtUpdated;
 }
-
-

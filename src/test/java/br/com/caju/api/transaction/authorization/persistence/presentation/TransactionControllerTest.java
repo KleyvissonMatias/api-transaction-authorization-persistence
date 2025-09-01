@@ -3,7 +3,7 @@ package br.com.caju.api.transaction.authorization.persistence.presentation;
 import br.com.caju.api.transaction.authorization.persistence.domain.Transaction;
 import br.com.caju.api.transaction.authorization.persistence.domain.dto.reponse.TransactionDTOResponse;
 import br.com.caju.api.transaction.authorization.persistence.domain.dto.request.TransactionDTORequest;
-import br.com.caju.api.transaction.authorization.persistence.domain.enuns.StatusCodeTransactionEnum;
+import br.com.caju.api.transaction.authorization.persistence.domain.enums.StatusCodeTransactionEnum;
 import br.com.caju.api.transaction.authorization.persistence.domain.mapper.TransactionMapper;
 import br.com.caju.api.transaction.authorization.persistence.service.TransactionService;
 import org.junit.jupiter.api.Test;

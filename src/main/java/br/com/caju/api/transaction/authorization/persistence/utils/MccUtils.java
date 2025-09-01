@@ -1,6 +1,6 @@
 package br.com.caju.api.transaction.authorization.persistence.utils;
 
-import br.com.caju.api.transaction.authorization.persistence.domain.enuns.MccTypeEnum;
+import br.com.caju.api.transaction.authorization.persistence.domain.enums.MccTypeEnum;
 
 import java.util.Arrays;
 import java.util.List;

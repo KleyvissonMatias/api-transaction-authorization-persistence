@@ -1,4 +1,4 @@
-package br.com.caju.api.transaction.authorization.persistence.domain.enuns;
+package br.com.caju.api.transaction.authorization.persistence.domain.enums;
 
 import lombok.Getter;
 

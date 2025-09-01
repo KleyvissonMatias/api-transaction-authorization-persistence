@@ -1,7 +1,7 @@
 package br.com.caju.api.transaction.authorization.persistence.domain;
 
-import br.com.caju.api.transaction.authorization.persistence.domain.enuns.MccTypeEnum;
-import br.com.caju.api.transaction.authorization.persistence.domain.enuns.StatusCodeTransactionEnum;
+import br.com.caju.api.transaction.authorization.persistence.domain.enums.MccTypeEnum;
+import br.com.caju.api.transaction.authorization.persistence.domain.enums.StatusCodeTransactionEnum;
 
 import java.math.BigDecimal;
 

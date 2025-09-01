@@ -3,8 +3,8 @@ spring:
     name: api-transaction-authorization-persistence
   datasource:
     url: jdbc:mysql://localhost:3306/payments?createDatabaseIfNotExist=true
-    username: user
-    password: user
+    username: root
+    password: R00Troot
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:

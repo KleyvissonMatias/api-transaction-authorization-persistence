@@ -1,6 +1,7 @@
 package br.com.caju.api.transaction.authorization.persistence.service;
 
 import br.com.caju.api.transaction.authorization.persistence.domain.StatusTransaction;
+import br.com.caju.api.transaction.authorization.persistence.domain.enums.StatusCodeTransactionEnum;
 import br.com.caju.api.transaction.authorization.persistence.exception.NotFoundException;
 import br.com.caju.api.transaction.authorization.persistence.repository.StatusTransactionRepository;
 import lombok.RequiredArgsConstructor;
@@ -23,5 +24,14 @@ public class StatusTransactionService {
                     LOGGER.log(Level.WARNING, "StatusTransaction not found for id: {0}", id);
                     return new NotFoundException("StatusTransaction not found for id:" + id);
                 });
+    }
+
+    public StatusTransaction getTransactionStatus(int rowsUpdated) {
+        StatusTransaction status = (rowsUpdated > 0)
+                ? findStatusTransactionById(StatusCodeTransactionEnum.APPROVED.ordinal())
+                : findStatusTransactionById(StatusCodeTransactionEnum.REJECTED.ordinal());
+
+        LOGGER.log(Level.INFO, "Transaction status determined: {0}", status);
+        return status;
     }
 }

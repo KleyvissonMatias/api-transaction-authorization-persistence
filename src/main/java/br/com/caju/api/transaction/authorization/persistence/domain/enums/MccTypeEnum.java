@@ -1,6 +1,5 @@
-package br.com.caju.api.transaction.authorization.persistence.domain.enuns;
+package br.com.caju.api.transaction.authorization.persistence.domain.enums;
 
-import br.com.caju.api.transaction.authorization.persistence.domain.Mcc;
 import lombok.Getter;
 
 @Getter

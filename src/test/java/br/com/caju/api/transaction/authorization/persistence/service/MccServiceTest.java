@@ -1,7 +1,7 @@
 package br.com.caju.api.transaction.authorization.persistence.service;
 
 import br.com.caju.api.transaction.authorization.persistence.domain.Mcc;
-import br.com.caju.api.transaction.authorization.persistence.domain.enuns.MccTypeEnum;
+import br.com.caju.api.transaction.authorization.persistence.domain.enums.MccTypeEnum;
 import br.com.caju.api.transaction.authorization.persistence.exception.NotFoundException;
 import br.com.caju.api.transaction.authorization.persistence.repository.MccRepository;
 import org.junit.jupiter.api.Test;
